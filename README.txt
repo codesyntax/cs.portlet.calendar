@@ -1,3 +1,16 @@
+.. image:: https://secure.travis-ci.org/codesyntax/cs.portlet.calendar.png?branch=master
+  :target: http://travis-ci.org/codesyntax/cs.portlet.calendar
+
+.. image:: https://coveralls.io/repos/github/codesyntax/cs.portlet.calendar/badge.svg?branch=master
+  :target: https://coveralls.io/github/codesyntax/cs.portlet.calendar?branch=master
+
+.. image:: https://landscape.io/github/codesyntax/cs.portlet.calendar/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/codesyntax/cs.portlet.calendar/master
+   :alt: Code Health
+
+.. image:: https://img.shields.io/pypi/v/nine.svg
+  :target: https://pypi.python.org/pypi/cs.portlet.calendar
+
 Introduction
 ============
 
