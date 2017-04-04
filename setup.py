@@ -30,7 +30,10 @@ setup(name='cs.portlet.calendar',
           # -*- Extra requirements: -*-
           'plone.api'
       ],
-      extras_require={'test': []},
+      extras_require={'test': [
+        'collective.MockMailHost',
+        'plone.app.testing',
+      ]},
       entry_points="""
       # -*- Entry points: -*-
 
