@@ -20,6 +20,5 @@ script:
   - bin/test
 after_success:
   - bin/createcoverage
-  - bin/coverage.sh
   - pip install coverage==3.7.1 coveralls
   - coveralls
