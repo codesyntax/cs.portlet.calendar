@@ -6,15 +6,17 @@ version = '1.0'
 setup(name='cs.portlet.calendar',
       version=version,
       description="Calendar portlet using fullcalendar.io",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
+        "Framework :: Plone :: 5.0",
+        "Framework :: Plone :: 5.1",
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
+      keywords='plone portlet calendar fullcalendar',
       author='Mikel Larreategi',
       author_email='mlarreategi@codesyntax.com',
       url='https://github.com/codesyntax/cs.portlet.calendar',
