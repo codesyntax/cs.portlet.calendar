@@ -29,3 +29,4 @@ This way you can do basic overriding of the calendar.
 
 It also provides a view that returns events in JSON, that way the fullcalendar
 is more flexible and faster when rendering events.
+
