@@ -1,29 +1,16 @@
 from plone.app.layout.navigation.root import getNavigationRootObject
 from Acquisition import aq_inner
-from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone.app.event.base import RET_MODE_OBJECTS
-from plone.app.event.base import _prepare_range
-from plone.app.event.base import expand_events
-from plone.app.event.base import first_weekday
-from plone.app.event.base import get_events, construct_calendar
-from plone.app.event.base import localized_today
-from plone.app.event.base import start_end_query
-from plone.app.event.base import wkday_to_mon1
-from plone.app.portlets import PloneMessageFactory as _
+from cs.portlet.calendar import MessageFactory as _
 from plone.app.portlets.portlets import base
-from plone.app.querystring import queryparser
 from plone.app.uuid.utils import uuidToObject
 from plone.app.vocabularies.catalog import CatalogSource
-from plone.event.interfaces import IEventAccessor
 from plone.portlets.interfaces import IPortletDataProvider
 from zope import schema
-from zope.component.hooks import getSite
 from zope.i18nmessageid import MessageFactory
 from zope.interface import implementer
 from plone import api
-import calendar
-import json
+
 
 try:
     from plone.app.contenttypes.behaviors.collection import ISyndicatableCollection as ICollection  # noqa
