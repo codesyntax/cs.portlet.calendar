@@ -28,7 +28,7 @@ class CSPortletCalendarLayer(PloneSandboxLayer):
         )
 
         self.loadZCML(package=collective.MockMailHost)
-        z2.installProduct(app, 'plone.restapi')
+        z2.installProduct(app, 'cs.portlet.calendar')
 
     def setUpPloneSite(self, portal):
         portal.acl_users.userFolderAddUser(
