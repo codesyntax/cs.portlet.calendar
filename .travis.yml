@@ -13,7 +13,7 @@ before_install:
   - virtualenv .
   - bin/pip install --upgrade pip setuptools zc.buildout
 install:
-  - sed -ie "s#travis-5.x.cfg#travis-$PLONE_VERSION.cfg#" travis.cfg
+  - sed -ie "s#travis-5.x.x.cfg#travis-$PLONE_VERSION.cfg#" travis.cfg
   - bin/buildout -N -t 3 -c travis.cfg
 script:
   - bin/code-analysis
