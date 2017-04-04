@@ -11,7 +11,7 @@ env:
 before_install:
   - mkdir -p $HOME/buildout-cache/{eggs,downloads}
   - virtualenv .
-  - bin/pip install --upgrade pip setuptools zc.buildout
+  - bin/pip install --upgrade pip setuptools==26.1.1 zc.buildout
 install:
   - sed -ie "s#travis-5.x.x.cfg#travis-$PLONE_VERSION.cfg#" travis.cfg
   - bin/buildout -N -t 3 -c travis.cfg
