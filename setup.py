@@ -30,6 +30,7 @@ setup(name='cs.portlet.calendar',
           # -*- Extra requirements: -*-
           'plone.api'
       ],
+      extras_require={'test': []},
       entry_points="""
       # -*- Entry points: -*-
 
